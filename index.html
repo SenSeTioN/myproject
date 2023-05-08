@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;0,800;0,900;1,400;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <!-- TODO: добавить фавиконку -->
+  <link rel="shortcut icon" href="#" type="image/x-icon">
+
+  <link rel="stylesheet" href="./css/main.min.css">
+  <link rel="stylesheet" href="./css/styles.min.css">
+
+  <title>ПРЕЙСИШ ЭЙЛАУ - старинный замок</title>
+</head>
+
+<body>
+  <header class="header">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="./img/logo_2.png" alt="Logo" class="object-cover w-100"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled">Disabled</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+
+    <div class="header__top ">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h1 class="header__top-title text-uppercase">
+              Добро пожаловать <br>в средневековый <br>замок <br>Прейсиш-Эйлау
+            </h1>
+            <p class="text-uppercase">Обитель Тевтонского ордена, прусских <br>вельмож,
+              наполеоновских дивизий <br>и русской доблести.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+  <main>
+
+    <section class="aboutcastle">
+      <div class="container">
+        <div class="row gx-0 align-items-center">
+          <div class="col-lg-6 mb-5 mb-lg-0">
+            <div style="background: hsla(0, 0%, 100%, 0.55);
+										backdrop-filter: blur(30px);
+										z-index: 1;" class="card rounded-7 me-lg-n5" data-mdb-toggle="animation" data-mdb-animation-start="onScroll"
+              data-mdb-animation="fade-in" data-mdb-animation-show-on-load="false" data-mdb-animation-delay="400">
+              <div class="card-body p-lg-5 shadow-5">
+                <h2 class="fw-bold">
+                  <span class="aboutcastle__title">Прейсиш-Эйлау </span>
+                </h2>
+                <p class="aboutcastle__title-caption"><em>Один из самых старых и хорошо сохранившихся замков, его стены
+                    видели
+                    многие
+                    истории и судьбы: быт орденских рыцарей и вражеские осады, непобедимую армию Наполеона,
+                    сокрушительные атаки Багратиона и Лестока, историю любви и долгие годы забвения. </em></p>
+                <p class="aboutcastle__title-caption-item mb-4">
+                  Почти 200 лет замок находился в запустении, а теперь он открывает свои двери для посещения и оживает
+                  вновь.
+                </p>
+                <p class="aboutcastle__title-caption-item ">
+                  Погрузитесь в многовековую историю старинного замка и ощутите себя его жителем, гостем и творцом. Вы
+                  можете стать частью его истории!
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 mb-5 mb-lg-0">
+            <div class="bg-image hover-overlay rounded-7 aboutcastle__item" data-mdb-toggle="animation"
+              data-mdb-animation-start="onScroll" data-mdb-animation="fade-in" data-mdb-animation-show-on-load="false"
+              data-mdb-animation-delay="200" data-mdb-animation-offset="300">
+              <img src="./img/header_2.jpg" class="aboutcastle__item-img" alt="Фото автора" />
+              <div class="mask" style="background: linear-gradient(
+							45deg,
+						hsla(169, 84.5%, 52%, 0.3),
+						hsla(263, 87.7%, 44.7%, 0.3) 100%
+											)">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="historyofcastly">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="text-center text-uppercase mb-3 historyofcastly__title">История замка</h2>
+          </div>
+        </div>
+        <div class="row mt-4">
+          <div class="col-12 ">
+            <div class="accordion" id="accordionPanelsStayOpenExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button text-end justify-content-end" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                    aria-controls="panelsStayOpen-collapseOne">
+                    С V века до 1325 года
+                    Племена пруссов
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                  <div class="accordion-body">
+                    <div class="row align-items-center">
+                      <div class="fst-italic col-12 col-lg-8"> Территория, на которой сейчас находится замок
+                        Прейсиш-Эйлау, с
+                        давних времен была местом обитания прусских племен. Начиная с V века прибалтийские земли в этой
+                        части континетна были заселены пруссами, которые устраивали укрепленные поселения для своих
+                        общин.
+                        Покорение этих земель Тевтонским орденом в XIII веке привело к постепенному истреблению и, в
+                        конечном счете, к полному исчезновению прусских племен.
+                      </div>
+                      <div class="col-lg-4 col-12 mt-2">
+                        <a href="#"> <img src="./img/img_3.jpg" alt="Logo" class="object-cover w-100"></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed " type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                    aria-controls="panelsStayOpen-collapseTwo"> 1325 - 1525 Государство Тевтонского ордена
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                  <div class="accordion-body">
+                    <div class="row align-items-center">
+                      <div class="col-12 col-lg-4 mt-2">
+                        <a href="#"> <img src="./img/img_3.jpg" alt="Logo" class="object-cover w-100"></a>
+                      </div>
+                      <div class="fst-italic col-12 col-lg-8">
+                        <p>Замок Прейсиш-Эйлау был основан в далеком 1325 году по решению Великого магистра Тевтонского
+                          ордена в ходе покорения прусских земель. Он выполнял роль
+                          административного и стратегического центра – был перевалочным пунктом для путешествующих
+                          рыцарей
+                          и резиденцией для управляющего местными землями (пфлегера). В замке кипела бурная жизнь и
+                          довольно быстро у его стен сформировалось поселение (лишке), позднее переросшее в город.</p>
+                        <p> Ровно 200 лет замок Прейсиш-Эйлау просуществовал в составе государства Тевтонского ордена,
+                          пережил несколько вражеских осад и имел влиятельных руководителей, среди которых ставший
+                          Великим
+                          магистром Конрад фон Валенрод и представитель знаменитой династии Генрих Ройс фон Плауэн –
+                          Великий маршал ордена.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed text-end justify-content-end" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                    aria-controls="panelsStayOpen-collapseThree">
+                    1525 - 1701 Герцогство Пруссия, 1701 - 1918 Королевство Пруссия, <br> 1758 - 1762
+                    Восточная Пруссия в составе Российской империи
+
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                  <div class="accordion-body">
+                    <div class="row align-items-center justify-content-center">
+                      <div class="fst-italic col-12">
+                        <p>После падения государства Тевтонского ордена на протяжении почти 400 лет замок был
+                          административным центром в Прусском герцогстве (немецком лютеранском герцогстве, созданном
+                          из прусских владений Тевтонского ордена) и позднее – в Прусском королевстве.</p>
+                        <p>В этот период происходили судьбоносные события:</p>
+                        <ul>
+                          <li>поселение вокруг замка получило статус города, такое же название и герб –
+                            Прейсиш-Эйлау (1585 год), </li>
+                          <li>замок вместе со всей Восточной Пруссией на протяжении 5 лет входил в состав Российской
+                            Империи (1758 - 1762 годы),</li>
+                          <li>в 1807 году замок и весь город заняли войска армии Наполеона, сойдясь с
+                            русско-прусской армией в самом кровопролитном сражении тех времен, оставившем яркий след в
+                            истории наполеоновских войн. </li>
+                        </ul>
+                        <p>В начале XIX века замок обрел нового хозяина – графа Валентини, который обосновал в нем
+                          свое поместье и назвал его в честь своей жены – Генриеттенхоф. Спустя 100 лет на территории
+                          замка был открыт краеведческий музей, просуществовавший до конца Великой Отечественной
+                          войны.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false"
+                    aria-controls="panelsStayOpen-collapseFour"> 1871 - 1918 Германская империя, <br> 1918 - 1945
+                    Германия
+                    (Веймарская республика, Германский рейх)
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse">
+                  <div class="accordion-body">
+                    <div class="row align-items-center">
+                      <div class="col-12 col-lg-4">
+                        <a href="#"> <img src="./img/img_3.jpg" alt="Logo" class="object-cover w-100"></a>
+                      </div>
+                      <div class="fst-italic col-12 col-lg-8">
+                        <p>С конца XIX века до середины XX века Прейсиш-Эйлау входил в состав Германии. </p>
+                        <p>Именно в этот период произошел раздел на Западную и Восточную Пруссию (1878 год) и частичная
+                          утрата территорий Западной Пруссии по Версальскому мирному договору 1919 года. Однако эти
+                          территориальные изменения не затронули замок Прейсиш-Эйлау и окрестности, остававшиеся в
+                          составе Германии вплоть до конца Второй мировой войны.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed text-end justify-content-end" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false"
+                    aria-controls="panelsStayOpen-collapseFive"> 1871 - 1918 Германская империя, <br> 1918 - 1945
+                    Германия
+                    (Веймарская республика, Германский рейх)
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse">
+                  <div class="accordion-body">
+                    <div class="row align-items-center">
+                      <div class="fst-italic col-12 col-lg-8">
+                        <p>С конца XIX века до середины XX века Прейсиш-Эйлау входил в состав Германии. </p>
+                        <p>Именно в этот период произошел раздел на Западную и Восточную Пруссию (1878 год) и частичная
+                          утрата территорий Западной Пруссии по Версальскому мирному договору 1919 года. Однако эти
+                          территориальные изменения не затронули замок Прейсиш-Эйлау и окрестности, остававшиеся в
+                          составе Германии вплоть до конца Второй мировой войны.</p>
+                      </div>
+                      <div class="col-12 col-lg-4">
+                        <a href="#"> <img src="./img/img_3.jpg" alt="Logo" class="object-cover w-100"></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseSix" aria-expanded="false"
+                    aria-controls="panelsStayOpen-collapseSix"> 1945 - 1991 СССР, РСФСР, <br> 1991 - настоящее время
+                    Самый западный регион России
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseSix" class="accordion-collapse collapse show">
+                  <div class="accordion-body">
+                    <div class="row align-items-center">
+                      <div class="col-12 col-lg-4">
+                        <a href="#"> <img src="./img/img_3.jpg" alt="Logo" class="object-cover w-100"></a>
+                      </div>
+                      <div class="fst-italic col-12 col-lg-8">
+                        <p>В начале 1945 года Прейсиш-Эйлау был взят Советской армией и по итогам Потсдамской
+                          конференции вошел в состав СССР как часть Калининградской области.</p>
+                        <p>Замок утратил свое административное значение в XVIII веке и постепенно ветшал. К сожалению,
+                          значительная часть сооружений была утрачена, однако чудом сохранившийся до наших дней форбург
+                          позволяет передавать из поколения в поколение историю замка и окружающих земель. Впереди -
+                          восстановление былой красоты и значения замка в жизни края.</p>
+                        <p>Приезжайте и убедитесь сами!</p>
+                        <p>Вас ждут: </p>
+                        <ul>
+                          <li>Экскурсии и туристические маршруты по территории замка</li>
+                          <li>Развлекательные мероприятия</li>
+                          <li>Увлекательные истории и легенды о замке</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="visit pb-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="visit__title text-uppercase text-center mt-4">
+              Посещение замка
+            </h2>
+            <p>Оцените форбург замка, исследуйте руины, поднимитесь на земляной вал, пройдитесь по стопам древних
+              пруссов, тевтонских рыцарей, прусских королей, Наполеона и русских генералов. </p>
+            <p>Почувствуйте себя простым жителем, рыцарем или великим полководцем. </p>
+            <p>Мы ждем вас в <strong>будни и выходные с 11:00 до 19:00</strong></p>
+            <p>В настоящее время доступен туристический маршрут по территории с посещением цитадели замка, форбурга,
+              земляного вала. По ходу маршрута размещены информационные стенды, фото-галерея, проекционные стекла и
+              места для фотографий на память. Во время посещения замка вы сможете отдохнуть в нашем кафе и подобрать
+              сувенирчик по душе. </p>
+            <p>Варианты посещения:</p>
+          </div>
+        </div>
+        <div class="row justify-content-center align-items-stretch gap-md-5 gap-3 ">
+          <div class="card col-md-4 visit__card" style="width: 18rem;">
+            <img src="./img/img_3.jpg" class="card-img-top object-cover w-100 pt-1" alt="Item 1">
+            <div class="card-body p-3">
+              <h5 class="card-title mb-4">Частное посещение (самостоятельно или с экскурсоводом)</h5>
+              <a href="#" class="btn btn-primary d-flex justify-content-center align-items-end btn__buy">Посетить
+                замок</a>
+            </div>
+          </div>
+
+          <div class="card col-md-4 visit__card" style="width: 18rem;">
+            <img src="./img/img_3.jpg" class="card-img-top object-cover w-100 pt-1" alt="Item 2">
+            <div class="card-body">
+              <h5 class="card-title mb-3">Экскурсия с организованной группой </h5>
+              <a href="#" class="btn btn-primary d-flex justify-content-center align-items-end btn__buy">Посетить
+                замок</a>
+            </div>
+          </div>
+
+          <div class="card col-md-4 visit__card" style="width: 18rem;">
+            <img src="./img/img_3.jpg" class="card-img-top object-cover w-100 pt-1" alt="Item 3">
+            <div class="card-body">
+              <h5 class="card-title mb-3">Исторические квесты (звоните и уточняйте)</h5>
+              <a href="#" class="btn btn-primary d-flex justify-content-center align-items-end btn__buy">Посетить
+                замок</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="future">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="future__title text-center text-uppercase my-4">
+              Будущее замка
+            </h2>
+          </div>
+        </div>
+        <div class="row gx-0 align-items-center">
+          <div class="col-lg-6 mb-5 mb-lg-0">
+            <div style="background: hsla(0, 0%, 100%, 0.55);
+										backdrop-filter: blur(30px);
+										z-index: 1;" class="card rounded-7 me-lg-n5" data-mdb-toggle="animation" data-mdb-animation-start="onScroll"
+              data-mdb-animation="fade-in" data-mdb-animation-show-on-load="false" data-mdb-animation-delay="400">
+              <div class="card-body p-lg-5 shadow-5">
+                <p class="aboutcastle__title-caption"><em>В настоящее время мы реализуем масштабный проект по
+                    восстановлению замка Прейсиш-Эйлау и организации многофункциональной туристско-рекреационной
+                    зоны.</em></p>
+                <p class="aboutcastle__title-caption-item mb-4">В рамках первой стадии проекта в начале 2023 года на
+                  территории замка начались противоаварийные
+                  работы.</p>
+                <p class="aboutcastle__title-caption-item mb-4">В мае 2023 года замок открыл свои двери для посетителей:
+                  все
+                  желающие могут посетить туристический
+                  маршрут и узнать много интересного про замок и его окрестности.</p>
+                <div class="card-body">
+                  <a href="#" class="btn btn-primary d-flex justify-content-center align-items-end btn__buy">Посетить
+                    замок</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 mb-5 mb-lg-0">
+            <div class="bg-image hover-overlay rounded-7 future__item" data-mdb-toggle="animation"
+              data-mdb-animation-start="onScroll" data-mdb-animation="fade-in" data-mdb-animation-show-on-load="false"
+              data-mdb-animation-delay="200" data-mdb-animation-offset="300">
+              <img src="./img/header_2.jpg" class="aboutcastle__item-img" alt="Фото автора" />
+              <div class="mask" style="background: linear-gradient(
+							45deg,
+						hsla(169, 84.5%, 52%, 0.3),
+						hsla(263, 87.7%, 44.7%, 0.3) 100%
+											)">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row gx-0 align-items-center my-lg-5 my-md-2">
+          <div class="col-lg-6 mb-5 mb-lg-0">
+            <div class="bg-image hover-overlay rounded-7 future__item" data-mdb-toggle="animation"
+              data-mdb-animation-start="onScroll" data-mdb-animation="fade-in" data-mdb-animation-show-on-load="false"
+              data-mdb-animation-delay="200" data-mdb-animation-offset="300">
+              <img src="./img/header_2.jpg" class="aboutcastle__item-img" alt="Фото автора" />
+              <div class="mask" style="background: linear-gradient(
+							45deg,
+						hsla(169, 84.5%, 52%, 0.3),
+						hsla(263, 87.7%, 44.7%, 0.3) 100%
+											)">
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 mb-5 mb-lg-3 future__item-block2 mb-sm-1">
+            <div style="background: hsla(0, 0%, 100%, 0.55);
+										backdrop-filter: blur(30px);
+										z-index: 1;" class="card rounded-7 me-lg-n5" data-mdb-toggle="animation" data-mdb-animation-start="onScroll"
+              data-mdb-animation="fade-in" data-mdb-animation-show-on-load="false" data-mdb-animation-delay="400">
+              <div class="card-body p-lg-5 shadow-5">
+                <p class="aboutcastle__title-caption"><em>Летом 2024 года запланировано открытие замка и первого этапа
+                    многофункциональной зоны. Нам предстоит большая работа, и мы стараемся сделать посещение замка
+                    незабываемым. Небольшой тайм-аут и на его территории появятся комфортные прогулочные зоны и
+                    пейзажный
+                    парк, детские развивающие мастерские и пространства для мероприятий, гостиница, ресторан, кафе и
+                    выставочное пространство - все для того, чтобы ваш отдых был по-настоящему сказочным и
+                    запоминающимся!</em></p>
+                <div class="card-body">
+                  <a href="#" class="btn btn-primary d-flex justify-content-center align-items-end btn__buy">Посетить
+                    замок</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+
+    <section class="mb-10 text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="footer__title text-center text-uppercase my-4">Клуб друзей замка</h2>
+            <div class="col-12 text-start">
+              <p>Присоединяйтесь к клубу друзей Замка Прейсиш-Эйлау и вам будут доступны следующие преимущества:</p>
+              <ul>
+                <li>
+                  <p>Специальные предложения при посещении замка </p>
+                </li>
+                <li>
+                  <p>Подарки на день рождения</p>
+                </li>
+                <li>
+                  <p>Эксклюзивная информация о ходе развития территории, археологических находках, раскрытых тайнах,
+                    запуске новых объектов</p>
+                </li>
+                <li>
+                  <p>Приглашение на открытие замка Прейсиш-Эйлау</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row gx-0 align-items-center justify-content-center">
+          <div class="col-lg-6 mb-5 mb-lg-0 d-flex justify-content-center">
+            <div
+              style="background: rgba(255, 255, 255, 0.55); backdrop-filter: blur(30px); z-index: 1; visibility: visible; animation-delay: 500ms; animation-duration: 500ms;"
+              class="card rounded-7 me-lg-n5 animation fade-in footer__form" data-mdb-toggle="animation"
+              data-mdb-animation-start="onScroll" data-mdb-animation="fade-in" data-mdb-animation-show-on-load="false"
+              data-mdb-animation-delay="500">
+              <div class="card-body p-lg-5 shadow-5">
+                <form>
+                  <div class="form-outline mb-4">
+                    <input type="text" id="form4Example1" class="form-control">
+                    <label class="form-label footer__form-label" for="form4Example1" style="margin-left: 0px;">Ваше
+                      ФИО</label>
+                    <div class="form-notch">
+                      <div class="form-notch-leading" style="width: 9px;"></div>
+                      <div class="form-notch-middle" style="width: 80px;"></div>
+                      <div class="form-notch-trailing"></div>
+                    </div>
+                  </div>
+
+                  <div class="form-outline mb-4">
+                    <input type="tel" id="form4Example3" class="form-control">
+                    <label class="form-label" for="form4Example3" style="margin-left: 0px;">Ваше телефон</label>
+                    <div class="form-notch">
+                      <div class="form-notch-leading" style="width: 9px;"></div>
+                      <div class="form-notch-middle" style="width: 102px;"></div>
+                      <div class="form-notch-trailing"></div>
+                    </div>
+                  </div>
+
+                  <div class="form-outline mb-4">
+                    <input type="email" id="form4Example2" class="form-control">
+                    <label class="form-label" for="form4Example2" style="margin-left: 0px;"> Ваш email</label>
+                    <div class="form-notch">
+                      <div class="form-notch-leading" style="width: 9px;"></div>
+                      <div class="form-notch-middle" style="width: 75px;"></div>
+                      <div class="form-notch-trailing"></div>
+                    </div>
+                  </div>
+                  <div class="form-check d-flex justify-content-center mb-4">
+                    <input class="form-check-input me-2" type="checkbox" value="" id="form4Example4" checked="">
+                    <label class="form-check-label" for="form4Example4">
+                      Я соглашаюсь с политикой конфиденциальности
+                    </label>
+                  </div>
+                  <button type="submit" class="btn btn-primary btn-block mb-4">Отправить</button>
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mb-5 mb-lg-0">
+            <div class="ratio ratio-1x1 animation fade-in" data-mdb-toggle="animation"
+              data-mdb-animation-start="onScroll" data-mdb-animation="fade-in" data-mdb-animation-show-on-load="false"
+              data-mdb-animation-delay="200" data-mdb-animation-offset="200"
+              style="visibility: visible; animation-delay: 200ms; animation-duration: 500ms;">
+              <iframe class="shadow-3-strong rounded-7"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9293.276400958202!2d20.613772687158196!3d54.38667850000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46e2fdb69de5b853%3A0x6eca2c3d72e6716e!2z0KTQvtGA0LHRg9GA0LMg0LfQsNC80LrQsCDQn9GA0LXQudGB0LjRiC3QrdC50LvQsNGD!5e0!3m2!1sru!2sru!4v1683564288879!5m2!1sru!2sru"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+  <script src="./js/main.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,121 @@
+.aboutcastle {
+	padding-top: 4.75rem;
+	padding-bottom: 4.75rem;
+	background-color: $mainBgAntiquewhite;
+
+	.container {
+		margin: 0 auto;
+	}
+
+	&__title {
+		color: $darkcobalt;
+		font-weight: 800;
+	}
+
+	&__title-caption {
+		color: $coopercolor;
+		font-weight: 800;
+	}
+	&__title-caption-item {
+		color: $beigecolor;
+		font-weight: 600;
+	}
+
+	&__item {
+		transform: rotate(5deg);
+		overflow: hidden;
+	}
+
+	&__item-img {
+		object-fit: cover;
+		width: 100%;
+	}
+
+	@media (max-width: 992px) {
+		.aboutcastle__item {
+			transform: rotate(0);
+		}
+	}
+}
+
+.historyofcastly {
+	background-color: $mainBgAntiquewhite;
+
+	&__title {
+		color: $darkcobalt;
+		font-weight: 700;
+	}
+	.accordion-button {
+		font-weight: 800;
+		color: $coopercolor;
+		background-color: $mainBgAntiquewhite;
+	}
+
+	.accordion-button:after {
+		margin-left: 1rem;
+	}
+
+	.accordion-button:not(.collapsed) {
+		background-color: $antiquewhite;
+	}
+	.accordion-button:not(.collapsed):after {
+		background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='darkblue'%3E%3Cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 01.708 0L8 10.293l5.646-5.647a.5.5 0 01.708.708l-6 6a.5.5 0 01-.708 0l-6-6a.5.5 0 010-.708z'/%3E%3C/svg%3E");
+	}
+
+	.accordion-body {
+		color: $darkcobalt;
+		font-weight: 500;
+		font-size: 1.25rem;
+		background-color: $mainBgAntiquewhite;
+	}
+}
+
+.visit {
+	background-color: $headerBgDarkBlue;
+
+	.visit__title {
+		color: $beigecolor;
+		font-weight: 700;
+	}
+
+	p {
+		color: $antiquewhite;
+	}
+
+	.visit__card {
+		background-color: $antiquewhite;
+	}
+
+	.card-title {
+		color: $darkcobalt;
+	}
+}
+
+.btn__buy {
+	color: $beigecolor;
+	background-color: $darkcobalt;
+	font-weight: 600;
+}
+
+.future {
+	background-color: $mainBgAntiquewhite;
+
+	&__title {
+		font-weight: 700;
+		color: $darkcobalt;
+	}
+
+	&__item {
+		overflow: hidden;
+	}
+
+	&__item-block2 {
+		margin-left: -2.625rem;
+	}
+
+	@media (max-width: 992px) {
+		&__item-block2 {
+			margin-left: 0;
+		}
+	}
+}
