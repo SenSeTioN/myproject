@@ -1,0 +1,30 @@
+.header_about {
+}
+
+.footer_about {
+	background-color: $headerBgDarkBlue;
+	width: 100%;
+	height: 100%;
+	padding-bottom: 1rem;
+
+	.footer__title_about {
+		margin-bottom: 5.5rem;
+		padding-top: 3.125rem;
+		color: $beigecolor;
+		font-weight: 700;
+	}
+
+	@media (max-width: 577px) {
+		.footer__title_about {
+			margin-bottom: 2.5rem;
+		}
+	}
+
+	.clubfriends_about {
+		padding-top: 6.25rem;
+
+		p {
+			font-size: 1.25rem;
+		}
+	}
+}
