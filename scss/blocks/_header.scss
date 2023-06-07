@@ -18,6 +18,10 @@ body {
 	background-size: cover;
 	position: relative;
 	z-index: 2;
+
+	.header__logo {
+		height: 6.25rem;
+	}
 }
 .header::after {
 	content: '';
@@ -41,7 +45,7 @@ body {
 		color: $coopercolor;
 		font-weight: 800;
 		font-size: 5vmin;
-		margin-top: 9.25rem;
+		margin-top: 20.25rem;
 		padding-left: 1rem;
 		padding-right: 2rem;
 		position: relative;
@@ -71,4 +75,9 @@ body {
 			font-size: 3vmin;
 		}
 	}
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .show > .nav-link {
+	color: $darkblue;
 }

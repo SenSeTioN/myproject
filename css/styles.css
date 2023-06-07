@@ -18,6 +18,9 @@ body {
   position: relative;
   z-index: 2;
 }
+.header .header__logo {
+  height: 6.25rem;
+}
 
 .header::after {
   content: "";
@@ -40,7 +43,7 @@ body {
   color: #7f553c;
   font-weight: 800;
   font-size: 5vmin;
-  margin-top: 9.25rem;
+  margin-top: 20.25rem;
   padding-left: 1rem;
   padding-right: 2rem;
   position: relative;
@@ -71,6 +74,11 @@ body {
   .header__top p {
     font-size: 3vmin;
   }
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .show > .nav-link {
+  color: #14183c;
 }
 
 .aboutcastle {
@@ -177,6 +185,12 @@ body {
     margin-left: 0;
   }
 }
+.future .futute__btn {
+  padding: 0 6.25rem;
+}
+.future .btn__buy {
+  padding: 0.625rem 0;
+}
 
 .footer {
   background-color: rgba(20, 24, 60, 0.8);
@@ -187,11 +201,47 @@ body {
 }
 .footer__title {
   font-weight: 700;
-  color: #7f553c;
+  color: #b79178;
 }
 .footer p {
   color: #cdc3bd;
 }
 .footer li {
   color: #cdc3bd;
+}
+.footer .footer__icons-item {
+  border-radius: 50%;
+  border: none;
+}
+.footer .footer__icons-item i {
+  font-size: 250%;
+  color: #cdc3bd;
+}
+
+.footer_about {
+  background-color: rgba(20, 24, 60, 0.8);
+  width: 100%;
+  height: 100%;
+  padding-bottom: 1rem;
+}
+.footer_about .footer__title_about {
+  margin-bottom: 5.5rem;
+  padding-top: 3.125rem;
+  color: #b79178;
+  font-weight: 700;
+}
+@media (max-width: 577px) {
+  .footer_about .footer__title_about {
+    margin-bottom: 2.5rem;
+  }
+}
+.footer_about .clubfriends_about {
+  padding-top: 6.25rem;
+}
+.footer_about .clubfriends_about p {
+  font-size: 1.25rem;
+}
+
+.colordarkcobalt {
+  color: #171d4a;
 }/*# sourceMappingURL=styles.css.map */

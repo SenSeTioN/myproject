@@ -16,40 +16,52 @@
   <link rel="shortcut icon" href="#" type="image/x-icon">
 
   <link rel="stylesheet" href="./css/main.min.css">
+  <link rel="stylesheet" href="./css/fontello.css">
   <link rel="stylesheet" href="./css/styles.min.css">
 
   <title>ПРЕЙСИШ ЭЙЛАУ - старинный замок</title>
 </head>
 
 <body>
-  <header class="header">
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#"><img src="./img/logo_2.png" alt="Logo" class="object-cover w-100"></a>
+  <header class="header" id="header">
+    <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary p-0 pt-1">
+      <div class="container-fluid ">
+        <a class="navbar-brand ps-4" href="#"><img src="./img/logo_2.png" alt="Logo"
+            class="header__logo object-cover w-100"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
           aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+          <ul class="navbar-nav align-items-end ms-auto gap-lg-4 gap-2 pe-3">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link colordarkcobalt  active" aria-current="page" href="#header">Главная</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
+              <a class="nav-link colordarkcobalt " href="#historyofcastly">История замка</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled">Disabled</a>
+              <a class="nav-link colordarkcobalt " href="#visit">Посещение замка</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link colordarkcobalt " href="pages/about.html">О Нас</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle colordarkcobalt " href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Dropdown link
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item colordarkcobalt " href="#">Action</a></li>
+                <li><a class="dropdown-item colordarkcobalt " href="#">Another action</a></li>
+                <li><a class="dropdown-item colordarkcobalt " href="#">Something else here</a></li>
+              </ul>
             </li>
           </ul>
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
         </div>
       </div>
     </nav>
-
 
     <div class="header__top ">
       <div class="container">
@@ -65,7 +77,6 @@
       </div>
     </div>
   </header>
-
 
   <main>
 
@@ -114,7 +125,7 @@
       </div>
     </section>
 
-    <section class="historyofcastly">
+    <section class="historyofcastly" id="historyofcastly">
       <div class="container">
         <div class="row">
           <div class="col-12">
@@ -274,8 +285,8 @@
 
               <div class="accordion-item">
                 <h2 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#panelsStayOpen-collapseSix" aria-expanded="false"
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseSix" aria-expanded="true"
                     aria-controls="panelsStayOpen-collapseSix"> 1945 - 1991 СССР, РСФСР, <br> 1991 - настоящее время
                     Самый западный регион России
                   </button>
@@ -312,10 +323,10 @@
       </div>
     </section>
 
-    <section class="visit pb-3">
+    <section class="visit pb-3" id="visit">
       <div class="container">
         <div class="row">
-          <div class="col-12">
+          <div class="col-10">
             <h2 class="visit__title text-uppercase text-center mt-4">
               Посещение замка
             </h2>
@@ -362,7 +373,7 @@
       </div>
     </section>
 
-    <section class="future">
+    <section class="future pb-3">
       <div class="container">
         <div class="row">
           <div class="col-12">
@@ -388,7 +399,7 @@
                   все
                   желающие могут посетить туристический
                   маршрут и узнать много интересного про замок и его окрестности.</p>
-                <div class="card-body">
+                <div class="card-body futute__btn">
                   <a href="#" class="btn btn-primary d-flex justify-content-center align-items-end btn__buy">Посетить
                     замок</a>
                 </div>
@@ -410,7 +421,7 @@
           </div>
         </div>
 
-        <div class="row gx-0 align-items-center my-lg-5 my-md-2">
+        <div class="row gx-0 align-items-center mt-5">
           <div class="col-lg-6 mb-5 mb-lg-0">
             <div class="bg-image hover-overlay rounded-7 future__item" data-mdb-toggle="animation"
               data-mdb-animation-start="onScroll" data-mdb-animation="fade-in" data-mdb-animation-show-on-load="false"
@@ -437,7 +448,7 @@
                     парк, детские развивающие мастерские и пространства для мероприятий, гостиница, ресторан, кафе и
                     выставочное пространство - все для того, чтобы ваш отдых был по-настоящему сказочным и
                     запоминающимся!</em></p>
-                <div class="card-body">
+                <div class="card-body futute__btn">
                   <a href="#" class="btn btn-primary d-flex justify-content-center align-items-end btn__buy">Посетить
                     замок</a>
                 </div>
@@ -452,12 +463,12 @@
 
   <footer class="footer">
 
-    <section class="mb-10 text-center">
+    <section class="clubfriends">
       <div class="container">
         <div class="row">
           <div class="col-12">
-            <h2 class="footer__title text-center text-uppercase my-4">Клуб друзей замка</h2>
-            <div class="col-12 text-start">
+            <h2 class="footer__title text-center text-uppercase pt-4 mb-3">Клуб друзей замка</h2>
+            <div class="col-9 text-start">
               <p>Присоединяйтесь к клубу друзей Замка Прейсиш-Эйлау и вам будут доступны следующие преимущества:</p>
               <ul>
                 <li>
@@ -543,6 +554,25 @@
       </div>
     </section>
 
+
+    <!-- <div class="container">
+      <div class="row">
+        <div class="col-12 text-center footer__icons">
+          <a class="btn btn-outline-light footer__icons-item" target="_blank" href="#buy"><i
+              class="icon-youtube-play"></i></a>
+          <a class="btn btn-outline-light footer__icons-item" target="_blank" href="#buy"><i
+              class="icon-mail-alt"></i></a>
+          <a class="btn btn-outline-light footer__icons-item" target="_blank" href="#buy"><i
+              class="icon-paper-plane"></i></a>
+          <a class="btn btn-outline-light footer__icons-item" target="_blank" href="#buy"><i
+              class="icon-vkontakte"></i></a>
+          <a class="btn btn-outline-light footer__icons-item" target="_blank" href="#buy"><i
+              class="icon-instagram"></i></a>
+          <a class="btn btn-outline-light footer__icons-item" target="_blank" href="https://github.com/SenSeTioN"><i
+              class="icon-github-circled"></i></a>
+        </div>
+      </div>
+    </div> -->
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"

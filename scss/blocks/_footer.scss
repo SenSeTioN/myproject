@@ -8,7 +8,7 @@
 
 	&__title {
 		font-weight: 700;
-		color: $coopercolor;
+		color: $beigecolor;
 	}
 
 	p {
@@ -17,5 +17,15 @@
 
 	li {
 		color: $antiquewhite;
+	}
+
+	.footer__icons-item {
+		border-radius: 50%;
+		border: none;
+
+		i {
+			font-size: 250%;
+			color: $antiquewhite;
+		}
 	}
 }
